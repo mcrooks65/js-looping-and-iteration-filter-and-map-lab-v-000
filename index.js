@@ -12,3 +12,5 @@ function driverNamesWithRevenueOver (drivers, revenue) {
       return driver.name;
     });
 }
+
+// This function takes an array of driver objects as the first argument and a JavaScript object that specifies an attribute and corresponding value. For example, exactMatch(drivers, { revenue: 3000 }) will return all drivers whose revenue attribute equals 3000, and exactMatch(drivers, { name: 'Bob' }) will return all drivers whose name attribute equals Bob.
