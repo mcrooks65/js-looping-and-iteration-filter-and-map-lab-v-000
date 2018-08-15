@@ -5,9 +5,9 @@ function driversWithRevenueOver(driver, revenue) {
   });
 }
 
-function driverNameWithRevenueOver (drivers, revenue) {
+function driverNamesWithRevenueOver (drivers, revenue) {
   return driversWithRevenueOver(drivers, revenue)
-  .map(function (driver) {
-    return driver.name;
-  });
+    .map(function (driver) {
+      return driver.name;
+    });
 }
