@@ -23,3 +23,11 @@ function exactMatch (drivers, matcher) {
     return matches;
   });
 }
+
+// This function works the same way as the exactMatch() function, except that instead of returning an array of driver objects, it returns an array of strings with each element in the array corresponding to the matching driver's name. For example, exactMatchToList(drivers, { revenue: 2000 }) will return ['Sammy'], as Sammy is the name of the matching driver object.
+function exactMatchToList (drivers, matcher) {
+  return exactMatch(drivers, matcher)
+    .map(function (driver) {
+      return driver.name;
+    });
+}
